@@ -1,0 +1,35 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  transition: ease 0.3s;
+}
+
+.navbar__logo {
+  width: 150px;
+  transition: ease 0.3s;
+}
+
+.navbar__links {
+display: flex;
+gap: 25px;
+}
+
+.navbar__links a {
+  color: var(--font-color-base);
+}
+
+.navbar__links .nav__btn {
+  background-color: var(--font-color-link);
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: var(--white);
+  margin: 0 10px;
+}

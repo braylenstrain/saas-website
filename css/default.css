@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.6;
   letter-spacing: 0;
@@ -47,11 +47,19 @@ img {
   border-style: none;
 }
 
-.container {
+.blue-text.blue-text { color: var(--font-color-link); }
+
+/* .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+} */
 
