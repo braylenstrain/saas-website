@@ -11,6 +11,8 @@
   right: 0;
   z-index: 300;
   transition: ease 0.3s;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navbar__logo {
@@ -19,8 +21,11 @@
 }
 
 .navbar__links {
-display: flex;
-gap: 22px;
+  display: flex;
+  gap: 22px;
+  font-family: 'hind', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .navbar__links a {
@@ -29,6 +34,7 @@ gap: 22px;
 
 .navbar__links .navbar__btn {
   margin: 0 10px;
+  font-size: 13px;
 }
 
 .navbar__toggler {
@@ -42,7 +48,8 @@ gap: 22px;
 .features-header {
   position: relative;
   overflow: hidden;
-  padding: 183px 0 57px;
+  padding-top: 183px;
+  height: 537px;
 }
 
 .features-header::before {
@@ -53,7 +60,7 @@ gap: 22px;
   top: -102%;
   left: -100%;
   z-index: -1;
-  background-image: linear-gradient(116deg, #fff 60%,#eee 85.9%, #e0e7ef 85.9%);
+  background-image: linear-gradient(117deg, #fff 60%,#eee 85.8%, #e0e7ef 85.8%);
   transform: rotate(-6deg);
 }
 
@@ -71,26 +78,61 @@ gap: 22px;
   font-family: 'hind', sans-serif;
 }
 
-.features-header__btn {
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 13px;
-}
-
-.fa-circle-play {
-  font-size: 18px;
-  margin-right: 9px;
-  position: relative;
-  top: 2px;
-}
-
 .features-header__learn-more {
   font-weight: 700;
   margin-left: 19px;
 }
 
 .features-header__icons {
-  width: 500px;
-  height: 300px;
-  background: transparent;
+  position: relative;
 }
+
+.features-header__icons div {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 82px;
+  padding: 16px;
+  position: absolute;
+  box-shadow: 0px 2px 10px #ada6a6;
+}
+
+.features-header__google-icon.features-header__google-icon {
+  right: 360px;
+  top: -46px;
+  width: 61px;
+  padding: 10px;
+}
+
+.features-header__atlassian-icon {
+  right: 225px;
+  top: -46px;
+}
+
+.features-header__asana-icon {
+  right: 14px;
+  top: -45px;
+}
+
+.features-header__paypal-icon {
+  right: 360px;
+  bottom: 51px;
+}
+
+.features-header__google-a-icon.features-header__google-a-icon {
+  width: 61px;
+  padding: 10px;
+  right: 266px;
+  bottom: -50px;
+}
+
+.features-header__weave-icon {
+  right: 136px;
+  bottom: 51px;
+}
+
+.features-header__calendar-icon {
+  right: 31px;
+  bottom: -90px;
+}
+
+
