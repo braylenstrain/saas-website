@@ -26,10 +26,35 @@ gap: 25px;
   color: var(--font-color-base);
 }
 
-.navbar__links .nav__btn {
+.navbar__links .navbar__btn {
   background-color: var(--font-color-link);
-  padding: 15px 25px;
+  padding: 12px 23px;
   border-radius: 25px;
   color: var(--white);
   margin: 0 10px;
+}
+
+.navbar__toggler {
+  display: none;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/* Header */
+.features-header {
+  position: relative;
+  overflow: hidden;
+  padding: 200px;
+}
+
+.features-header::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -102%;
+  left: -100%;
+  z-index: -1;
+  background-image: linear-gradient(116deg, #fff 65%,#eee 86%, #e0e7ef 86%);
+   transform: rotate(-6deg);
 }
