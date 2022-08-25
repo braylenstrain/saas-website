@@ -1,5 +1,4 @@
 :root {
-  --white: #fff;
   --font-color-title: #000;
   --font-color-base: #677788;
   --font-color-link: #2476ff;
@@ -15,6 +14,7 @@
   --size-30: 1.875rem;
   --size-40: 2.5rem;
   --size-50: 3.125rem;
+  --size-60: 3.75rem;
   --size-100: 6.25rem;
   --size-150: 9.375rem;
 }
@@ -74,7 +74,7 @@ img {
   background-color: var(--font-color-link);
   padding: 0.9375rem 1.5625rem;
   border-radius: 1.5625rem;
-  color: var(--white);
+  color: white;
   font-size: var(--size-12);
 }
 
