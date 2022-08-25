@@ -114,7 +114,7 @@
 .features-header__icons div {
   background-color: white;
   border-radius: 50%;
-  width: 5rem;
+  width: var(--size-80);
   padding: var(--size-16);
   position: absolute;
   box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
@@ -178,7 +178,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap:var(--size-30);
-  margin-bottom: 5.625rem;
+  margin-bottom: var(--size-90);
 }
 
 .key-benefits__card {
@@ -210,18 +210,18 @@
   justify-content: center;
   align-items: center;
   background-color: #F8FAFE;
-  margin-top: 5.625rem;
-  height: 470px;
+  margin-top: var(--size-90);
+  height: 29.375rem;
   text-align: left;
 }
 
 .key-benefits__extra-info-content {
-  padding-left: 30px;
+  padding-left: var(--size-30);
   flex: 1;
 }
 
 .key-benefits__extra-info h3 {
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--font-color-title);
   font-weight: 500;
 }
@@ -230,6 +230,80 @@
   align-self:flex-end;
   flex: 2;
   box-shadow: -5px -5px 10px rgb(0 0 0 / 10%);
+}
+
+/* Why Front? */
+
+.why-front {
+  margin-top: var(--size-80);
+  text-align: center;
+}
+
+.why-front h2 {
+  margin-bottom: var(--size-10);
+}
+
+.why-front p {
+  font-size: var(--size-16);
+}
+
+.why-front__bullets-list {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--size-60) auto;
+  max-width: 920px;
+}
+
+.why-front__bullets-list h4 {
+  font-weight: 600;
+  font-size: var(--size-16);
+  color: var(--font-color-title);
+  white-space: nowrap;
+}
+
+.why-front__bullet {
+  width: 100%;
+}
+
+.why-front__bullet-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.why-front__big-circle {
+  display: inline-block;
+  width: var(--size-50);
+  height: var(--size-50);
+  background-color: var(--contrast);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 0.25rem;
+  flex: 0 0 auto;
+}
+
+.why-front__little-circle {
+  display: inline-block;
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #0066FF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.why-front__line--transparent {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+}
+
+.why-front__line--grey {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #E6E9F2;
 }
 
 
