@@ -205,6 +205,33 @@
   font-weight: 700;
 }
 
+.key-benefits__extra-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8FAFE;
+  margin-top: 5.625rem;
+  height: 470px;
+  text-align: left;
+}
+
+.key-benefits__extra-info-content {
+  padding-left: 30px;
+  flex: 1;
+}
+
+.key-benefits__extra-info h3 {
+  font-size: 26px;
+  color: var(--font-color-title);
+  font-weight: 500;
+}
+
+.key-benefits__img-wrapper {
+  align-self:flex-end;
+  flex: 2;
+  box-shadow: -5px -5px 10px rgb(0 0 0 / 10%);
+}
+
 
 
 
