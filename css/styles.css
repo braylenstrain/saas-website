@@ -1,18 +1,44 @@
 /* Navbar */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--size-20) var(--size-30);
-  position: fixed;
+  padding: var(--size-20) 0;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 300;
-  transition: ease 0.3s;
   max-width: 1200px;
   margin: 0 auto;
+  transition: 0.5s;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes fly-in-top {
+  from {transform: translateY(-100px)}
+  to {transform: translateY(0)}
+}
+
+.navbar.sticky {
+  animation: fly-in-top 0.5s forwards;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  max-width: none;
+  padding: var(--size-10) 0;
+}
+
+@keyframes fly-out-top {
+  from {position: fixed; max-width: none;}
+  to {transform: translateY(-100px)}
+}
+
+.navbar.removeSticky {
+  animation: fly-out-top 0.5s;
 }
 
 .navbar__logo {

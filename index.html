@@ -20,34 +20,36 @@
 
 <body>
   <!-- Sticky with delay instead of fixed? -->
-  <nav class="navbar">
-    <div class="navbar__logo">
-      <img src="/assets/images/logo.svg" alt="Company Logo">
+  <nav class="navbar" id="topNav">
+    <div class="container navbar__wrapper">
+      <div class="navbar__logo">
+        <img src="/assets/images/logo.svg" alt="Company Logo">
+      </div>
+
+      <!-- This may need to be surrounded by a button -->
+      <span class="navbar__toggler" aria-expanded="false" aria-controls="navbarDropdown">&#9776;</span>
+
+      <ul class="navbar__links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a class="blue-text" href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Learn</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Hire us</a>
+        </li>
+        <li>
+          <a class="navbar__btn blue-btn" href="#">Buy Now</a>
+        </li>
+      </ul>
     </div>
-
-    <!-- This may need to be surrounded by a button -->
-    <span class="navbar__toggler" aria-expanded="false" aria-controls="navbarDropdown">&#9776;</span>
-
-    <ul class="navbar__links">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a class="blue-text" href="#">Features</a>
-      </li>
-      <li>
-        <a href="#">Learn</a>
-      </li>
-      <li>
-        <a href="#">Pricing</a>
-      </li>
-      <li>
-        <a href="#">Hire us</a>
-      </li>
-      <li>
-        <a class="navbar__btn blue-btn" href="#">Buy Now</a>
-      </li>
-    </ul>
   </nav>
 
   <header class="features-header">
@@ -130,5 +132,18 @@
       </div>
     </div>
   </section>
+
+  <script>
+    const nav = document.getElementById("topNav");
+    window.onscroll = function () {
+      if (window.pageYOffset > 600) {
+        nav.classList.remove("removeSticky");
+        nav.classList.add("sticky");
+      } else if (window.pageYOffset < 600 && nav.classList.contains("sticky")) {
+        nav.classList.remove("sticky");
+        nav.classList.add("removeSticky");
+      }
+    }
+  </script>
 </body>
 </html>
