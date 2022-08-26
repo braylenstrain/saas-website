@@ -342,25 +342,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: var(--size-60);
 }
 
 .why-front__testimonial-img-wrapper {
-  width: 452px;
-  height: 560px;
+  width: 28.25rem;
+  height: 35rem;
   position: relative;
   display: inline-block;
 }
 
 .why-front__testimonial-img {
-  width: 371px;
+  width: 23.1875rem;
   position: absolute;
   left: 79px;
 }
 
 .why-front__testimonial-img-background {
   position: absolute;
-  width: 200px;
+  width: 12.5rem;
   z-index: -1;
   left: 24px;
   top: 101px;
@@ -368,25 +368,25 @@
 
 .why-front__testimonial-testimony {
   display: inline-block;
-  max-width: 512px;
+  max-width: 32rem;
   text-align: left;
   flex: 1;
-  margin-bottom: 115px;
+  margin-bottom: 7.1875rem;
 }
 
 .why-front__testimonial-icon {
-  width: 100px;
+  width: var(--size-100);
 }
 
 .why-front__testimonial-testimony p {
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--font-color-title);
-  margin: 30px 0 50px;
+  margin: var(--size-30) 0 var(--size-50);
 }
 
 .why-front__testimonial-name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--size-18);
   color: var(--font-color-title);
 }
 
@@ -395,3 +395,18 @@
 }
 
  /* Why Front Trusted By */
+
+ .why-front__trusted h3 {
+  font-size: var(--size-20);
+  color: #5F6368;
+  margin-bottom: var(--size-40);
+ }
+
+ .why-front__trusted-icons {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .why-front__icon-wrapper {
+  width: 7.0625rem;
+ }
