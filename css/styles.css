@@ -46,6 +46,8 @@
   transition: ease 0.3s;
 }
 
+/* Navbar Links Menu */
+
 .navbar__links {
   display: flex;
   gap: var(--size-20);
@@ -68,7 +70,7 @@
   cursor: pointer;
 }
 
-/* Header */
+/* Header/Hero */
 
 .features-header {
   position: relative;
@@ -106,6 +108,8 @@
   font-weight: 700;
   margin-left: 1.5rem;
 }
+
+/* Hero Icons */
 
 .features-header__icons {
   position: relative;
@@ -172,6 +176,7 @@
   margin-bottom: var(--size-60);
 }
 
+/* Key Benefits Cards */
 
 .key-benefits__card-list {
   display: flex;
@@ -204,6 +209,8 @@
   color: var(--font-color-link);
   font-weight: 700;
 }
+
+/* Key Benefits Extra Info */
 
 .key-benefits__extra-info {
   display: flex;
@@ -246,6 +253,8 @@
 .why-front p {
   font-size: var(--size-16);
 }
+
+/* Why Front Bullet List */
 
 .why-front__bullets-list {
   display: flex;
@@ -306,6 +315,83 @@
   background: #E6E9F2;
 }
 
+/* Why Front Video */
 
+.why-front__video-wrapper {
+  position: relative;
+  margin-bottom: 5.1875rem;
+}
 
+.why-front__video-wrapper .fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--size-20);
+  color: var(--font-color-title);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  padding: 1.5625rem;
+  padding-left: var(--size-30);
+}
 
+ /* Why Front Testimonial */
+
+.why-front__testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.why-front__testimonial-img-wrapper {
+  width: 452px;
+  height: 560px;
+  position: relative;
+  display: inline-block;
+}
+
+.why-front__testimonial-img {
+  width: 371px;
+  position: absolute;
+  left: 79px;
+}
+
+.why-front__testimonial-img-background {
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+  left: 24px;
+  top: 101px;
+}
+
+.why-front__testimonial-testimony {
+  display: inline-block;
+  max-width: 512px;
+  text-align: left;
+  flex: 1;
+  margin-bottom: 115px;
+}
+
+.why-front__testimonial-icon {
+  width: 100px;
+}
+
+.why-front__testimonial-testimony p {
+  font-size: 22px;
+  color: var(--font-color-title);
+  margin: 30px 0 50px;
+}
+
+.why-front__testimonial-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--font-color-title);
+}
+
+.why-front__testimonial-position {
+  font-weight: 700;
+}
+
+ /* Why Front Trusted By */
