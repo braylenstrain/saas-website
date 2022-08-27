@@ -424,8 +424,6 @@
   font-size: var(--size-16);
 }
 
-/* Pricing Cards */
-
 .pricing__cards {
   padding: 0 2.75rem;
   display: grid;
@@ -493,6 +491,8 @@ padding-top: var(--size-30);
 padding-bottom: var(--size-30);
 }
 
+ /* Hire Us Left Side */
+
 .hire-us__left-side {
   color: white;
 }
@@ -527,7 +527,7 @@ margin-bottom: var(--size-10);
 .hire-us__img-list img{
   width: var(--size-30);
   border-radius: 50%;
-  margin: 0 0.5rem;
+  margin: 0 var(--size-8);
 }
 
 img.hire-us__img--enlarged {
@@ -543,6 +543,8 @@ img.hire-us__img--enlarged {
   font-size: var(--size-12);
   font-weight: 200;
 }
+
+/* Hire Us Form Side */
 
 .hire-us__form-side {
   background-color: white;
@@ -619,4 +621,64 @@ img.hire-us__img--enlarged {
   font-size: var(--size-16);
   font-weight: 500;
   font-family: 'Inter', sans-serif;
+}
+
+/* Footer Top*/
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--size-50);
+  margin-top: var(--size-80);
+  margin-bottom: var(--size-40);
+}
+
+.footer__address-wrapper {
+  margin-right: -0.625rem;
+}
+
+.footer__front-logo {
+  width: var(--size-100);
+  margin-bottom: var(--size-20);
+}
+
+.footer__top address {
+  font-style: normal;
+}
+
+.footer__top .fa-phone {
+  color: var(--font-color-base);
+}
+
+.footer__top h4 {
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--font-color-title);
+  margin: 0 0 var(--size-12);
+}
+
+.footer__top li a {
+  color: var(--font-color-base);
+}
+
+.footer__top li+li {
+  margin-top: 5px;
+}
+
+.footer__top .fa-solid {
+  margin-right: var(--size-8);
+  font-size: var(--size-12);
+}
+
+.footer__top li span {
+  padding: 2px 4px;
+  background: #2576FF;
+  border-radius: 3px;
+  font-size: var(--size-8);
+  color: white;
+  font-weight: 400;
+  margin-left: var(--size-8);
+  position: relative;
+  bottom: 2px;
 }
