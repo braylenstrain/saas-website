@@ -415,62 +415,204 @@
 /* Pricing */
 
 .pricing h2 {
-  font-size: 26px;
+  font-size: 1.625rem;
   text-align: center;
 }
 
 .pricing > p {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--size-16);
 }
 
 /* Pricing Cards */
 
 .pricing__cards {
-  padding: 0 44px;
+  padding: 0 2.75rem;
   display: grid;
-  gap: 30px;
-  grid-template-columns: 370px repeat(auto-fit, minmax(240px, 1fr));
-  margin: 60px auto 120px;
-  max-width: 1050px;
+  gap: var(--size-20);
+  grid-template-columns: 23.125rem  repeat(auto-fit, minmax(15rem, 1fr));
+  margin: var(--size-60) auto 7.5rem;
+  max-width: 65.625rem;
 }
 
 .pricing__big-card {
   border: 1px solid #FFFFFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
   grid-row: 1 / 3;
-  width: 370px;
-  padding: 68px 40px;
+  padding: 4.25rem var(--size-40);
 }
 
 .pricing__big-card-number {
-  font-size: 50px;
+  font-size: var(--size-50);
   color: var(--font-color-title);
 }
 
 .pricing__per-month {
-  font-size: 20px;
+  font-size: var(--size-20);
 }
 
 .pricing__big-card p {
-  font-size: 16px;
+  font-size: var(--size-16);
 }
 
 .pricing__big-card .play-btn {
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: var(--size-50);
+  margin-bottom: var(--size-10);
 }
 
 .pricing__big-card div {
-  font-size: 12px;
+  font-size: var(--size-12);
+}
+
+.pricing__small-card {
+  padding: var(--size-20);
 }
 
 .pricing__small-card-img {
-  width: 50px;
+  width: var(--size-50);
 }
 
 .pricing__small-card h4{
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--size-18);
   color: var(--font-color-title);
+}
+
+/* Hire us */
+
+.hire-us {
+  background: #20335B url(/assets/images/hire-us-transparent-pattern-bg.svg);
+  max-width: 100%;
+}
+
+.hire-us__wrapper {
+display: flex;
+align-items: center;
+gap: var(--size-100);
+padding-top: var(--size-30);
+padding-bottom: var(--size-30);
+}
+
+.hire-us__left-side {
+  color: white;
+}
+
+.hire-us__left-side h2 {
+color: white;
+font-weight: 500;
+margin-bottom: var(--size-10);
+}
+
+.hire-us__intro-subtitle {
+  font-weight: 300;
+}
+
+.hire-us hr {
+  margin: var(--size-20) 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  width: 50%;
+}
+
+.hire-us__quote {
+  font-size: var(--size-18);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.hire-us__img-list {
+  margin-top: var(--size-20);
+}
+
+.hire-us__img-list img{
+  width: var(--size-30);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+img.hire-us__img--enlarged {
+  width: var(--size-50);
+}
+
+.hire-us__people-name {
+  font-weight: 700;
+  font-size: var(--size-16);
+}
+
+.hire-us__people-title {
+  font-size: var(--size-12);
+  font-weight: 200;
+}
+
+.hire-us__form-side {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size-30);
+  border-radius: var(--size-10);
+}
+
+.hire-us__form-side h4 {
+  color: var(--font-color-title);
+  font-size: var(--size-20);
+  font-weight: 600;
+}
+
+.hire-us__form-grid {
+  display: grid;
+  gap:var(--size-20);
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--size-20);
+}
+
+.hire-us__form-side input,
+.hire-us__form-side select,
+.hire-us__form-side textarea {
+  border: 1px solid #E6E8F2;
+  border-radius: 0.3125rem;
+}
+
+.hire-us__form-side input[type="text"],
+.hire-us__form-side select {
+  height: 2.8125rem;
+  padding-left: var(--size-10);
+}
+
+.hire-us__form-side input::placeholder,
+.hire-us__form-side textarea::placeholder,
+.hire-us__form-side label {
+  color: #828282;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.hire-us__form-side select {
+  width: 100%;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.hire-us__form-side textarea {
+  resize: none;
+  width: 100%;
+  height: var(--size-150);
+  grid-column: 1 / 3;
+  padding: var(--size-10);
+}
+
+.hire-us__checkbox-container span {
+  cursor: pointer;
+  border-bottom: 2px dashed #677788;
+}
+
+.hire-us__checkbox-container span:hover {
+  color: var(--font-color-link);
+}
+
+#hireUsFormBtn {
+  border: 0;
+  width: 100%;
+  border-radius: 0.3125rem;
+  margin-top: var(--size-10);
 }
