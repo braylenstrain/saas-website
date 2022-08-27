@@ -615,4 +615,8 @@ img.hire-us__img--enlarged {
   width: 100%;
   border-radius: 0.3125rem;
   margin-top: var(--size-10);
+  cursor: pointer;
+  font-size: var(--size-16);
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
