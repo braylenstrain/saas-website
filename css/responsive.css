@@ -1,7 +1,8 @@
 @media screen and (max-width: 1024px) {
   .navbar__links {
-    font-size: 18px;
+    font-size: var(--size-18);
   }
+
   [aria-controls="navbarDropdown"] {
     display: block;
     visibility: visible;
@@ -15,20 +16,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: var(--size-40);
     position: absolute;
     background: white;
     width: 100vw;
     height: 29vh;
-    top: 66px;
-    left: -4px;
+    top: 4.125rem;
+    left: -0.25rem;
     border-top: 1px solid #E7E7E7;
-    padding: 70px 155px;
+    padding: var(--size-70) 9.6875rem;
   }
 
   .features-header__hero-wrapper {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
-
-/* TODO Fix header background and floating images, maybe redo positioning as well? */

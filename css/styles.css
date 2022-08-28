@@ -74,20 +74,22 @@
 
 /* Header/Hero */
 
-.features-header {
-  position: relative;
+.features-header__background {
+  position: absolute;
   overflow: hidden;
-  padding-top: 11.25rem;
   height: 35.375rem;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.features-header::before {
+.features-header__background::before {
   content: "";
   position: absolute;
   width: 200%;
   height: 200%;
   top: -102%;
-  left: -100%;
+  right: 0;
   z-index: -1;
   background-image: linear-gradient(117deg, #fff 60%,#eee 86%, #E1E7EF 86%);
   transform: rotate(-6deg);
@@ -96,6 +98,7 @@
 .features-header__hero-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 175px;
 }
 
 .features-header__title {
@@ -115,6 +118,9 @@
 
 .features-header__icons {
   position: relative;
+  width: 477px;
+  height: 406px;
+  margin-right: var(--size-60);
 }
 
 .features-header__icons div {
@@ -127,50 +133,49 @@
 }
 
 .features-header__google-icon.features-header__google-icon {
-  right: 346px;
-  top: -46px;
+  left: 20%;
+  top: -45px;
   width: var(--size-60);
   padding: var(--size-10);
 }
 
 .features-header__atlassian-icon {
-  right: 218px;
-  top: -46px;
+  right: 50%;
+  top: -45px;
+  left: 50%;
 }
 
 .features-header__asana-icon {
-  right: 14px;
+  right: -10%;
   top: -45px;
 }
 
 .features-header__paypal-icon {
-  right: 348px;
-  top: 153px;
+  left: 20%;
+  bottom: 45%;
 }
 
 .features-header__google-a-icon.features-header__google-a-icon {
   width: var(--size-60);
   padding: var(--size-10);
-  right: 251px;
-  top: 274px;
+  left: 45%;
+  bottom: 20%;
 }
 
 .features-header__weave-icon {
-  right: 130px;
-  top: 153px;
+  right: 15%;
+  bottom: 45%;
 }
 
 .features-header__calendar-icon {
-  right: 31px;
-  top: 294px;
+  right: -5%;
+  bottom: 10%;
 }
 
 /* Key Benefits */
 
 .key-benefits {
   text-align: center;
-  margin-top: var(--size-150);
-
 }
 
 .key-benefits > p {
