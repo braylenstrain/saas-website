@@ -770,18 +770,17 @@
 
   <script>
     const navBar = document.getElementById("topNav");
+    const navButton = document.querySelector('span[aria-expanded]');
 
     window.onscroll = function () {
-      if (window.pageYOffset > 600) {
+      if (window.pageYOffset > 600 && navButton.getAttribute('aria-expanded') === 'false') {
         navBar.classList.remove("removeSticky");
         navBar.classList.add("sticky");
-      } else if (window.pageYOffset < 600 && navBar.classList.contains("sticky")) {
+      } else if (window.pageYOffset < 600 && navBar.classList.contains("sticky") && navButton.getAttribute('aria-expanded') === 'false') {
         navBar.classList.remove("sticky");
         navBar.classList.add("removeSticky");
       }
     }
-
-    const navButton = document.querySelector('span[aria-expanded]');
 
     function toggleNav({ target }) {
       const expanded = target.getAttribute('aria-expanded') === 'true'; // || false
@@ -789,11 +788,6 @@
       if (window.pageYOffset < 600) {
         expanded ? navBar.classList.remove('sticky') : navBar.classList.add('sticky');
       }
-      // if (!expanded) {
-      //   navBar.classList.add('sticky');
-      // } else {
-      //   navBar.classList.remove('sticky');
-      // }
     }
 
     navButton.addEventListener('click', toggleNav);
