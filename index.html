@@ -773,20 +773,28 @@
     const navButton = document.querySelector('span[aria-expanded]');
 
     window.onscroll = function () {
-      if (window.pageYOffset > 600 && navButton.getAttribute('aria-expanded') === 'false') {
-        navBar.classList.remove("removeSticky");
-        navBar.classList.add("sticky");
-      } else if (window.pageYOffset < 600 && navBar.classList.contains("sticky") && navButton.getAttribute('aria-expanded') === 'false') {
-        navBar.classList.remove("sticky");
-        navBar.classList.add("removeSticky");
+      if (navButton.getAttribute('aria-expanded') === 'false') {
+          if (window.pageYOffset > 600) {
+          navBar.classList.remove("removeSticky");
+          navBar.classList.add("sticky");
+        } else if (window.pageYOffset < 600) {
+          navBar.classList.remove("sticky");
+          navBar.classList.add("removeSticky");
+        }
       }
     }
 
     function toggleNav({ target }) {
-      const expanded = target.getAttribute('aria-expanded') === 'true'; // || false
+      const expanded = target.getAttribute('aria-expanded') === 'true';
       navButton.setAttribute('aria-expanded', !expanded);
       if (window.pageYOffset < 600) {
-        expanded ? navBar.classList.remove('sticky') : navBar.classList.add('sticky');
+        if (expanded) {
+          navBar.classList.remove('sticky');
+          navBar.classList.add('removeSticky');
+        } else {
+          navBar.classList.add('sticky');
+          navBar.classList.remove('removeSticky');
+        }
       }
     }
 
