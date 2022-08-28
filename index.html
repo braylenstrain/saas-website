@@ -769,16 +769,34 @@
 
 
   <script>
-    const nav = document.getElementById("topNav");
+    const navBar = document.getElementById("topNav");
+
     window.onscroll = function () {
       if (window.pageYOffset > 600) {
-        nav.classList.remove("removeSticky");
-        nav.classList.add("sticky");
-      } else if (window.pageYOffset < 600 && nav.classList.contains("sticky")) {
-        nav.classList.remove("sticky");
-        nav.classList.add("removeSticky");
+        navBar.classList.remove("removeSticky");
+        navBar.classList.add("sticky");
+      } else if (window.pageYOffset < 600 && navBar.classList.contains("sticky")) {
+        navBar.classList.remove("sticky");
+        navBar.classList.add("removeSticky");
       }
     }
+
+    const navButton = document.querySelector('span[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true'; // || false
+      navButton.setAttribute('aria-expanded', !expanded);
+      if (window.pageYOffset < 600) {
+        expanded ? navBar.classList.remove('sticky') : navBar.classList.add('sticky');
+      }
+      // if (!expanded) {
+      //   navBar.classList.add('sticky');
+      // } else {
+      //   navBar.classList.remove('sticky');
+      // }
+    }
+
+    navButton.addEventListener('click', toggleNav);
   </script>
 </body>
 </html>

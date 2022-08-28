@@ -69,6 +69,7 @@
   display: none;
   visibility: hidden;
   cursor: pointer;
+  font-size: var(--size-20);
 }
 
 /* Header/Hero */
@@ -144,24 +145,24 @@
 
 .features-header__paypal-icon {
   right: 348px;
-  bottom: 51px;
+  top: 153px;
 }
 
 .features-header__google-a-icon.features-header__google-a-icon {
   width: var(--size-60);
   padding: var(--size-10);
   right: 251px;
-  bottom: -50px;
+  top: 274px;
 }
 
 .features-header__weave-icon {
   right: 130px;
-  bottom: 51px;
+  top: 153px;
 }
 
 .features-header__calendar-icon {
   right: 31px;
-  bottom: -90px;
+  top: 294px;
 }
 
 /* Key Benefits */

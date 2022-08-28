@@ -1,0 +1,34 @@
+@media screen and (max-width: 1024px) {
+  .navbar__links {
+    font-size: 18px;
+  }
+  [aria-controls="navbarDropdown"] {
+    display: block;
+    visibility: visible;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    background: white;
+    width: 100vw;
+    height: 29vh;
+    top: 66px;
+    left: -4px;
+    border-top: 1px solid #E7E7E7;
+    padding: 70px 155px;
+  }
+
+  .features-header__hero-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* TODO Fix header background and floating images */
