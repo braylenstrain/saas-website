@@ -16,6 +16,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes fly-in-top {
@@ -52,6 +57,7 @@
   display: flex;
   gap: var(--size-20);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .navbar__links a {
@@ -125,6 +131,7 @@
   width: 29.8125rem;
   height: 25.375rem;
   margin-right: var(--size-60);
+  min-width: 300px;
 }
 
 .features-header__icons div {
@@ -358,24 +365,23 @@
 }
 
 .why-front__testimonial-img-wrapper {
-  width: 28.25rem;
-  height: 35rem;
-  position: relative;
-  display: inline-block;
+  margin-left: var(--size-50);
 }
 
 .why-front__testimonial-img {
-  width: 23.1875rem;
-  position: absolute;
-  left: 79px;
+  max-width: 23.1875rem;
+  position: relative;
 }
 
-.why-front__testimonial-img-background {
+.why-front__testimonial-img::before {
+  content: "";
   position: absolute;
-  width: 12.5rem;
+  width: 61%;
+  height: 100%;
+  bottom: -15%;
+  right: 55%;
   z-index: -1;
-  left: 24px;
-  top: 101px;
+  background-image: url("/assets/images/dots.svg");
 }
 
 .why-front__testimonial-testimony {
@@ -383,7 +389,6 @@
   max-width: 32rem;
   text-align: left;
   flex: 1;
-  margin-bottom: 7.1875rem;
 }
 
 .why-front__testimonial-icon {
@@ -407,6 +412,10 @@
 }
 
 /* Why Front Trusted By */
+
+.why-front__trusted {
+  margin-top: var(--size-150);
+}
 
 .why-front__trusted h3 {
   font-size: var(--size-20);
@@ -565,7 +574,7 @@ img.hire-us__img--enlarged {
 
 .hire-us__form-side h4 {
   color: var(--font-color-title);
-  font-size: var(--size-20);
+  font-size: var(--size-16);
   font-weight: 600;
 }
 
