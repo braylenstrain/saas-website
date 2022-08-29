@@ -109,6 +109,10 @@
   margin-bottom: var(--size-12);
 }
 
+.features-header__content .play-btn {
+  margin-top: var(--size-14);
+}
+
 .features-header__learn-more {
   font-weight: 700;
   margin-left: 1.5rem;
@@ -118,8 +122,8 @@
 
 .features-header__icons {
   position: relative;
-  width: 477px;
-  height: 406px;
+  width: 29.8125rem;
+  height: 25.375rem;
   margin-right: var(--size-60);
 }
 
@@ -134,20 +138,20 @@
 
 .features-header__google-icon.features-header__google-icon {
   left: 20%;
-  top: -45px;
+  top: -2.5rem;
   width: var(--size-60);
   padding: var(--size-10);
 }
 
 .features-header__atlassian-icon {
   right: 50%;
-  top: -45px;
+  top: -2.8125rem;
   left: 50%;
 }
 
 .features-header__asana-icon {
   right: -10%;
-  top: -45px;
+  top: -2.8125rem;
 }
 
 .features-header__paypal-icon {
@@ -194,7 +198,7 @@
 }
 
 .key-benefits__card {
-  min-width: 13.125rem;
+  min-width: 13.6rem;
   max-width: 21.25rem;
   text-align: left;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -238,6 +242,7 @@
   font-size: 1.625rem;
   color: var(--font-color-title);
   font-weight: 500;
+  margin-bottom: var(--size-20);
 }
 
 .key-benefits__img-wrapper {
@@ -388,7 +393,7 @@
 .why-front__testimonial-testimony p {
   font-size: 1.375rem;
   color: var(--font-color-title);
-  margin: var(--size-30) 0 var(--size-50);
+  margin: var(--size-30) 0 2.8125rem;
 }
 
 .why-front__testimonial-name {
@@ -434,7 +439,7 @@
 .pricing__cards {
   padding: 0 2.75rem;
   display: grid;
-  gap: var(--size-20);
+  gap: var(--size-30);
   grid-template-columns: 23.125rem  repeat(auto-fit, minmax(15rem, 1fr));
   margin: var(--size-60) auto 7.5rem;
   max-width: 65.625rem;
@@ -461,7 +466,7 @@
 }
 
 .pricing__big-card .play-btn {
-  margin-top: var(--size-50);
+  margin-top: var(--size-30);
   margin-bottom: var(--size-10);
 }
 
@@ -481,6 +486,7 @@
   font-weight: 700;
   font-size: var(--size-18);
   color: var(--font-color-title);
+  white-space: nowrap;
 }
 
 /* Hire us */
@@ -501,7 +507,7 @@ padding-bottom: var(--size-30);
  /* Hire Us Left Side */
 
 .hire-us__left-side {
-  color: white;
+  font-size: var(--size-16);
 }
 
 .hire-us__left-side h2 {
@@ -510,21 +516,18 @@ font-weight: 500;
 margin-bottom: var(--size-10);
 }
 
-.hire-us__intro-subtitle {
-  font-weight: 300;
-}
-
 .hire-us hr {
-  margin: var(--size-20) 0;
+  margin: var(--size-30) 0;
   border: 0;
   border-bottom: 1px solid rgba(255,255,255, 0.2);
   width: 50%;
 }
 
 .hire-us__quote {
-  font-size: var(--size-18);
-  font-weight: 300;
+  /* font-size: var(--size-18); */
+  font-weight: 400;
   font-style: italic;
+  color: white;
 }
 
 .hire-us__img-list {
@@ -543,13 +546,11 @@ img.hire-us__img--enlarged {
 
 .hire-us__people-name {
   font-weight: 700;
-  font-size: var(--size-16);
+  font-size: var(--size-18);
+  color: white;
 }
 
-.hire-us__people-title {
-  font-size: var(--size-12);
-  font-weight: 200;
-}
+
 
 /* Hire Us Form Side */
 
@@ -573,6 +574,7 @@ img.hire-us__img--enlarged {
   gap:var(--size-20);
   grid-template-columns: 1fr 1fr;
   margin-bottom: var(--size-20);
+  width: 100%
 }
 
 .hire-us__form-side input,
@@ -633,15 +635,15 @@ img.hire-us__img--enlarged {
 /* Footer Top*/
 
 .footer__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--size-50);
+  display: grid;
+  grid-template-columns: 250px repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--size-40);
   margin-top: var(--size-80);
 }
 
 .footer__address-wrapper {
   margin-right: -0.625rem;
+  grid-row: 1 / 3;
 }
 
 .footer__front-logo {
@@ -694,7 +696,7 @@ img.hire-us__img--enlarged {
 }
 
 footer hr {
-  margin: var(--size-40) 0;
+  margin: 0 0 var(--size-40);
   border: 1px solid #E6E9F2;
 }
 

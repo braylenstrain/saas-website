@@ -80,9 +80,9 @@ img {
   font-size: var(--size-12);
 }
 
-.play-btn {
+.play-btn.play-btn {
   display: inline-block;
-  margin-top: var(--size-14);
+  padding: var(--size-14) 1.5625rem;
 }
 
 .fa-circle-play {
