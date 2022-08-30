@@ -773,7 +773,7 @@
           if (window.pageYOffset > 600) {
           navBar.classList.remove("removeSticky");
           navBar.classList.add("sticky");
-        } else if (window.pageYOffset < 600) {
+        } else if (window.pageYOffset < 600 && navBar.classList.contains('sticky')) {
           navBar.classList.remove("sticky");
           navBar.classList.add("removeSticky");
         }

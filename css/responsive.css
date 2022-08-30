@@ -20,7 +20,7 @@
     position: absolute;
     background: white;
     width: 102vw;
-    height: 50vh;
+    height: 25vh;
     top: 4.125rem;
     left: -0.25rem;
     border-top: 1px solid #E7E7E7;
@@ -46,7 +46,7 @@
   }
 
   .key-benefits__extra-info {
-    margin-top: 12.5rem;
+    margin-top: var(--size-150);
     flex-direction: column;
     text-align: center;
     gap: var(--size-40);
@@ -136,7 +136,7 @@
   }
 
   [aria-expanded="true"] ~ ul {
-    height: 75vh;
+    /* height: 55vh; */
     gap: var(--size-20);
   }
 
@@ -150,7 +150,7 @@
   }
 
   .key-benefits__extra-info {
-    margin-top: var(--size-50);
+    margin-top: 20%;;
   }
 
   .why-front {
@@ -201,16 +201,17 @@
     grid-template-columns: 1fr;
   }
 
-  .hire-us__form-grid {
-    grid-template-columns: 1fr;
-  }
-
   .hire-us__left-side {
     flex-direction: column;
   }
 
   .hire-us__intro {
     margin-right: 0;
+    text-align: center;
+  }
+
+  .hire-us__form-grid {
+    grid-template-columns: 1fr;
   }
 
   .hire-us__form-side textarea {
@@ -231,5 +232,17 @@
   .footer__sml-wrapper {
     flex-direction: column;
     gap:var(--size-30);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  [aria-expanded="true"] ~ ul {
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  [aria-expanded="true"] ~ ul {
+    height: 75vh;
   }
 }
