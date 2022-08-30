@@ -20,7 +20,7 @@
     position: absolute;
     background: white;
     width: 102vw;
-    height: 25vh;
+    height: 15rem;
     top: 4.125rem;
     left: -0.25rem;
     border-top: 1px solid #E7E7E7;
@@ -234,14 +234,8 @@
   }
 }
 
-@media screen and (max-width: 591px) {
+@media screen and (max-width: 579px) {
   [aria-expanded="true"] ~ ul {
-    height: 55vh;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  [aria-expanded="true"] ~ ul {
-    height: 75vh;
+    height: 25rem;
   }
 }
