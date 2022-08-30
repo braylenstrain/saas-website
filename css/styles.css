@@ -212,6 +212,12 @@
   border: 1px solid #FFFFFF;
   padding: var(--size-20);
   flex: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.key-benefits__card:hover {
+  transform: translateY(-0.3125rem);
 }
 
 .key-benefits__card img {
@@ -223,7 +229,7 @@
   font-size: var(--size-16);
 }
 
-.key-benefits__card a {
+.key-benefits__card > span {
   color: var(--font-color-link);
   font-weight: 700;
 }
