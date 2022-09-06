@@ -1,5 +1,5 @@
 # Mock Saas Website
-I created this project to practice using HTML/CSS and making websites mobile responsive.
+This is a features page for a Mock Saas product. I created this project to practice HTML/CSS and making web pages mobile responsive.
 
 ## Links
 saas-website-braylenstrain.vercel.app
